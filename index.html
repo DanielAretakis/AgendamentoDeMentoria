@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Mentoria</title>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Mentoria</h1>
+        <p>
+          Preencha o formulário abaixo para
+          <br />
+          agendar a sua mentoria
+        </p>
+      </header>
+      <main>
+        <form action="" id="form">
+          <fieldset>
+            <legend>Informações Pessoais</legend>
+            <div class="group name">
+              <div class="wrapper">
+                <label for="Name">Nome </label>
+                <input type="text" name="Name" id="Name" required />
+              </div>
+
+              <div class="wrapper">
+                <label for="LastName">Sobrenome </label>
+                <input type="text" name="LastName" id="LastName" required />
+              </div>
+            </div>
+            
+            <label for="Email"
+              >Email<span>(digite um email válido)</span></label
+            >
+            <input type="email" name="Email" id="Email" required />
+            
+            <label for="Password"
+              >Senha<span>(mínimo de 6 caracteres)</span></label
+            >
+            <input type="text" name="Password" id="Password" required />
+          </fieldset>
+          <fieldset>
+            <legend>Informações do mentor</legend>
+            
+            <label for="TeacherName">
+              Nome do seu mentor<span>(apenas o primeiro nome)</span></label
+            >
+            <input type="text" name="TeacherName" id="TeacherName" required />
+          </fieldset>
+          <h2>Seus horários disponíveis</h2>
+          <fieldset class="date">
+            <legend>Primeira mentoria</legend>
+
+            <div class="group date">
+              <div class="wrapper day">
+                <label for="Date"> Data<span>(DD/MM/AAAA)</span></label>
+                <input type="date" name="Date" id="Date" required />
+              </div>
+              
+              <div class="wrapper time">
+                <label for="StartTime"> Das </label>
+                <input type="time" name="StartTime" id="StartTime" required />
+              </div>
+              
+              <div class="wrapper time">
+                <label for="FinalTime"> Até </label>
+                <input type="time" name="FinalTime" id="FinalTime" required />
+              </div>
+            
+          </fieldset>
+          <fieldset class="date">
+            <legend>Segunda mentoria</legend>
+            
+            <div class="group date">
+              <div class="wrapper day">
+                <label for="Date"> Data<span>(DD/MM/AAAA)</span></label>
+                <input type="date" name="Date" id="Date" required />
+              </div>
+              
+              <div class="wrapper time">
+                <label for="StartTime"> Das </label>
+                <input type="time" name="StartTime" id="StartTime" required />
+              </div>
+              
+              <div class="wrapper time">
+                <label for="FinalTime"> Até </label>
+                <input type="time" name="FinalTime" id="FinalTime" required />
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <div class="button">
+          <button type="submit" form="form">Salvar</button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
